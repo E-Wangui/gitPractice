@@ -1,0 +1,124 @@
+/* body {
+  background-color: blueviolet;
+} */
+
+.home,
+.about,
+.services,
+.contact {
+  border: 1px solid black;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main sidenav"
+    "footer footer";
+}
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  grid-area: header;
+  margin: 2px;
+  padding: 2px;
+  width: 100%;
+}
+.image {
+  background-position: center;
+  background-image: url("https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+  height: 450px;
+  width: 5000px;
+  max-width: 1000px;
+  grid-area: main;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  opacity: 0.5;
+  position: relative;
+}
+.text {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .sidenav{
+    grid-area: sidenav;
+} */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  grid-area: footer;
+  margin: 5px;
+  padding: 2px;
+  width: 100%;
+}
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-area: sidenav;
+  align-items: center;
+  height: 450px;
+}
+/* img {
+  height: 100px;
+} */
+.home,
+.about,
+.services,
+.contact {
+  padding: 20px;
+  margin: 10px;
+  width: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border: 0;
+  box-shadow: 2px 2px 5px 2px grey;
+}
+i {
+  height: 20px;
+  width: 20px;
+  color: black;
+}
+button {
+  background-color: black;
+  color: blanchedalmond;
+}
+.analytics,
+.marketing,
+.development,
+.support {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 0 100px 40px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  box-shadow: 2px 2px 5px 2px grey;
+}
+.membership1,
+.membership2 {
+  padding: 40px;
+  margin: 20px;
+  width: 200px;
+  box-shadow: 2px 2px 5px 2px grey;
+}
+.text2 {
+  top: 25%;
+  text-align: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.text3 {
+  top: 25%;
+  text-align: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
